@@ -1,4 +1,7 @@
-export const config = { runtime: 'edge' };
+export const config = { 
+  runtime: 'edge',
+  regions: ['iad1'] 
+};
 
 export default async function handler(req) {
   const url = new URL(req.url);
